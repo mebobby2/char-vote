@@ -5,5 +5,5 @@
 - *bower*. Do not know why the author decided to use bower as well as npm+browserify. Browserify by itself would have suffice. Anyways, once bower is installed with *npm install*, you can then install the bower components by *node_modules/bower/bin/bower install*
 - While in development, run *gulp* from one terminal (to build the js files), and *npm run watch* to restart the nodejs server when files change. Leave these two processes running while you develop.
 - Also need to start MongoDB. Run *npm run mongo*
-- To import the newedenfaces.bson into mongo db, run *mongorestore newedenfaces.bson*
+- To import the newedenfaces.bson into mongo db, run *mongorestore -d charvote --collection characters newedenfaces.bson*
 - The *postinstall* script inside package.json is for deployment to Heroku. The command compile the app and download Bower packages after deployment.
