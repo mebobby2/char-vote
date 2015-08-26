@@ -5,3 +5,4 @@
 - *bower*. Do not know why the author decided to use bower as well as npm+browserify. Browserify by itself would have suffice. Anyways, once bower is installed with *npm install*, you can then install the bower components by *node_modules/bower/bin/bower install*
 - While in development, run *gulp* from one terminal (to build the js files), and *npm run watch* to restart the nodejs server when files change. Leave these two processes running while you develop.
 - Also need to start MongoDB. Create a data dir first *sudo mkdir -p /data/db* and then run *mongod* from the mongo folder.
+- To import the newedenfaces.bson into mongo db, run *mongorestore newedenfaces.bson*
